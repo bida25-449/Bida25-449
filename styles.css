@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL WEBSITE STYLING
+   RESET
 ========================= */
 
 *{
@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body{
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffd6e7;
     color: #333;
     line-height: 1.6;
 }
@@ -20,23 +24,32 @@ body{
 ========================= */
 
 nav{
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
+    background: #ff4f81;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
-    transition: 0.3s;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
 
+/* Navigation Hover */
 nav a:hover{
-    color: gold;
+    background-color: white;
+    color: #ff4f81;
+    transform: translateY(-3px);
 }
 
 /* =========================
@@ -45,18 +58,21 @@ nav a:hover{
 
 h1{
     text-align: center;
-    margin: 20px 0;
-    color: #111;
-    font-size: 40px;
+    margin: 30px 0;
+    font-size: 45px;
+    color: #b30059;
+    letter-spacing: 2px;
 }
 
 h2{
-    margin: 20px 0 10px;
-    color: #222;
+    margin-top: 30px;
+    color: #cc0066;
+    font-size: 30px;
 }
 
 h3{
     margin-top: 15px;
+    color: #99004d;
 }
 
 /* =========================
@@ -64,8 +80,43 @@ h3{
 ========================= */
 
 p{
-    margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main,
+section,
+.about-container,
+.contact-container,
+.account-container,
+.cart-container{
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
+.product-card{
+    background: white;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover{
+    transform: translateY(-8px);
 }
 
 /* =========================
@@ -73,13 +124,13 @@ p{
 ========================= */
 
 img{
-    display: block;
-    margin: 15px auto;
-    border-radius: 12px;
-    transition: transform 0.3s;
-    max-width: 100%;
+    width: 220px;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
+/* Image hover */
 img:hover{
     transform: scale(1.05);
 }
@@ -89,49 +140,20 @@ img:hover{
 ========================= */
 
 button{
-    background-color: black;
+    background: #ff4f81;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
     margin-top: 10px;
 }
 
 button:hover{
-    background-color: gold;
-    color: black;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-a{
-    transition: 0.3s;
-}
-
-a:hover{
-    opacity: 0.8;
-}
-
-/* =========================
-   SECTION / CARD STYLE
-========================= */
-
-section,
-.about-container,
-.contact-container,
-.account-container,
-.cart-container{
-    background-color: white;
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    background: #b30059;
+    transform: scale(1.05);
 }
 
 /* =========================
@@ -143,90 +165,73 @@ form{
 }
 
 input,
-textarea,
-select{
+textarea{
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 10px;
     border: 1px solid #ccc;
-    border-radius: 6px;
     font-size: 16px;
 }
 
 input:focus,
 textarea:focus{
     outline: none;
-    border-color: gold;
+    border: 2px solid #ff4f81;
 }
 
 /* =========================
-   CONTACT PAGE
+   LISTS
 ========================= */
 
-.contact-info{
-    margin-top: 20px;
+ul{
+    list-style: none;
+    margin-top: 15px;
 }
 
-.contact-info p{
-    margin-bottom: 10px;
-}
-
-/* =========================
-   ABOUT PAGE
-========================= */
-
-.about-text{
-    text-align: center;
+li{
     padding: 10px;
+    background: #ffe6f0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+li:hover{
+    background: #ffb3cc;
 }
 
 /* =========================
-   ACCOUNT PAGE
+   CART ITEMS
 ========================= */
-
-.account-box{
-    text-align: center;
-}
-
-.account-box h2{
-    margin-bottom: 20px;
-}
-
-/* =========================
-   CART PAGE
-========================= */
-
-.cart-items{
-    margin-top: 20px;
-}
 
 .cart-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
-    padding: 15px;
+    background: #fff0f5;
+    padding: 18px;
+    border-radius: 12px;
     margin-bottom: 15px;
-    border-radius: 8px;
 }
 
 /* =========================
-   PRODUCT CARDS
+   QUICK LINKS
 ========================= */
 
-.product-card{
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+section a{
+    display: inline-block;
+    margin-top: 10px;
+    background: #ff4f81;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.product-card:hover{
-    transform: translateY(-5px);
+section a:hover{
+    background: #b30059;
 }
 
 /* =========================
@@ -234,32 +239,36 @@ textarea:focus{
 ========================= */
 
 footer{
-    background-color: black;
+    background: #ff4f81;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    font-size: 16px;
 }
 
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
 
-@media (max-width: 768px){
+@media(max-width:768px){
 
-    nav a{
-        display: block;
-        margin: 10px 0;
+    nav{
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .cart-item{
         flex-direction: column;
-        text-align: center;
+        gap: 10px;
+    }
+
+    img{
+        width: 100%;
+        max-width: 250px;
     }
 }
-
-} 
