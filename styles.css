@@ -1,136 +1,265 @@
-body { 
+/* =========================
+   GLOBAL WEBSITE STYLING
+========================= */
 
-    font-family: serif, sans-serif; 
-
-    color: #333; 
-
-    background-color: #f9f9f9; 
-
-    margin: 0; 
-
-    padding: 0; 
-
-    line-height: normal; 
-
-} 
-header { 
-
-    background-color: #af4c90; 
-
-    color: rgb(255, 255, 255); 
-
-    padding: 20px; 
-
-    text-align: center; 
-
-} 
-
- 
-
-header h1 { 
-
-    margin: 0; 
-
-} 
-
- 
-
-nav a { 
-
-    color: white; 
-
-    text-decoration: none; 
-
-    margin: 0 10px; 
-
-} 
-
- 
-
-nav a:hover { 
-
-    text-decoration: underline; 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main { 
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
 
-    padding: 15px; 
+/* =========================
+   NAVIGATION BAR
+========================= */
 
-    max-width: 400px; 
+nav{
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
 
-    margin: 0 auto; 
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
 
-} 
+nav a:hover{
+    color: gold;
+}
 
- 
+/* =========================
+   HEADINGS
+========================= */
 
-main img { 
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: #111;
+    font-size: 40px;
+}
 
-    max-width: fit-content;
+h2{
+    margin: 20px 0 10px;
+    color: #222;
+}
 
-    height: fit-content; 
+h3{
+    margin-top: 15px;
+}
 
-    display: inside; 
+/* =========================
+   PARAGRAPHS
+========================= */
 
-    margin: 20px 0; 
+p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
 
-} 
+/* =========================
+   IMAGES
+========================= */
 
-footer { 
+img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    max-width: 100%;
+}
 
-    background-color: #333333; 
+img:hover{
+    transform: scale(1.05);
+}
 
-    color: white; 
+/* =========================
+   BUTTONS
+========================= */
 
-    text-align: center; 
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
 
-    padding: 15px; 
+button:hover{
+    background-color: gold;
+    color: black;
+}
 
-    position: fixed; 
+/* =========================
+   LINKS
+========================= */
 
-    bottom: auto; 
+a{
+    transition: 0.3s;
+}
 
-    width: 40%; 
+a:hover{
+    opacity: 0.8;
+}
 
-} 
+/* =========================
+   SECTION / CARD STYLE
+========================= */
 
-p { 
+section,
+.about-container,
+.contact-container,
+.account-container,
+.cart-container{
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
 
-    font-size: 1.1em; 
+/* =========================
+   FORMS
+========================= */
 
-} 
+form{
+    margin-top: 20px;
+}
 
- 
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
 
-a { 
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: gold;
+}
 
-    color: #4cafaf; 
+/* =========================
+   CONTACT PAGE
+========================= */
 
-    text-decoration: none; 
+.contact-info{
+    margin-top: 20px;
+}
 
-} 
+.contact-info p{
+    margin-bottom: 10px;
+}
 
- 
+/* =========================
+   ABOUT PAGE
+========================= */
 
-a:hover { 
+.about-text{
+    text-align: center;
+    padding: 10px;
+}
 
-    text-decoration: underline; 
+/* =========================
+   ACCOUNT PAGE
+========================= */
 
-} 
+.account-box{
+    text-align: center;
+}
 
-img { 
+.account-box h2{
+    margin-bottom: 20px;
+}
 
-    border: 5px solid #af4c96; 
+/* =========================
+   CART PAGE
+========================= */
 
-    border-radius: 10px; 
+.cart-items{
+    margin-top: 20px;
+}
 
-} 
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
 
-main a[href^="mailto:"] { 
+/* =========================
+   PRODUCT CARDS
+========================= */
 
-    color: #ff5722; 
+.product-card{
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
 
-    font-weight: bold; 
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px){
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .cart-item{
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 } 
