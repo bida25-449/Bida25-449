@@ -6,7 +6,7 @@ body {
 
     background-color: #f9f9f9; 
 
-    margin: 1; 
+    margin: 0; 
 
     padding: 0; 
 
@@ -15,11 +15,11 @@ body {
 } 
 header { 
 
-    background-color: #af4c98; 
+    background-color: #af4c90; 
 
     color: rgb(255, 255, 255); 
 
-    padding: 10px; 
+    padding: 20px; 
 
     text-align: center; 
 
@@ -55,7 +55,7 @@ nav a:hover {
 
 main { 
 
-    padding: 10px; 
+    padding: 15px; 
 
     max-width: 400px; 
 
@@ -67,11 +67,11 @@ main {
 
 main img { 
 
-    max-width: 100%; 
+    max-width: fit-content;
 
-    height: auto; 
+    height: fit-content; 
 
-    display: block; 
+    display: inside; 
 
     margin: 20px 0; 
 
@@ -83,15 +83,15 @@ footer {
 
     color: white; 
 
-    text-align: start; 
+    text-align: center; 
 
-    padding: 10px; 
+    padding: 15px; 
 
     position: fixed; 
 
-    bottom: 0; 
+    bottom: auto; 
 
-    width: %; 
+    width: 40%; 
 
 } 
 
