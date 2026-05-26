@@ -8,26 +8,84 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
  <link rel="stylesheet" href="styles.css"> 
+ <!-- Bootstrap CSS --> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <title>Page Title</title> 
 
 </head> 
 
 <body> 
-    <nav>
-    <a href="index.html">Home</a> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <a href="shop.html">shop</a> 
+  <div class="container">
 
-    <a href="collection.html">collection</a> 
+    <a class="navbar-brand" href="index.html">
+      Urban Vogue
+    </a>
 
-    <a href="about.html">about</a> 
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
 
-    <a href="contact.html">Contact</a>
+      <span class="navbar-toggler-icon"></span>
 
-    <a href="account.html">account</a>
+    </button>
 
-    <a href="cart.html">cart</a>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">
+            Shop
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="collection.html">
+            Collection
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="account.html">
+            Account
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">
+            Cart
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
 
 <html>
 <head>
@@ -83,7 +141,9 @@
 
     <p>Price: P256.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>>
 
     <h3>Reviews</h3>
     <p>Simple,timeless and beautifully made.It's the kind of bag you reach for every single day.</p>
@@ -98,7 +158,9 @@
 
     <p>Price: P314.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>I was looking for something affordable but classy and this exceeded my expectations .</p>
@@ -113,7 +175,9 @@
 
     <p>Price: P299.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>My go to bag for everything.Work,shopping,outings-it does it all and still looks so chic .</p>
@@ -128,7 +192,9 @@
 
     <p>Price: P219.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Classic elegance that never goes out of style.</p>
@@ -142,7 +208,9 @@
 
     <p>Price: P399.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>A truly polished and sophisticated piece.</p>
@@ -155,7 +223,9 @@
 
     <p>Price: P369.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>I receive compliments everytime I carry it.</p>
@@ -170,7 +240,9 @@
 
     <p>Price: P519.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Highly recommend.</p>
@@ -183,7 +255,9 @@
 
     <p>Price: P699.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Impressed with quality.</p>
@@ -195,8 +269,9 @@
     <p>Carry smart,look stylish.</p>
 
     <p>Price: P499.99</p>
-
-    <button>Add to Cart</button>
+<button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Worth every cent.</p>
@@ -211,7 +286,9 @@
 
     <p>Price: P349.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Beautifully made.</p>
@@ -237,15 +314,18 @@
 
     <p>Price: P369.99</p>
 
-    <button>Add to Cart</button>
+    <button class="add-cart btn btn-dark">
+    Add to Cart
+</button>
 
     <h3>Reviews</h3>
     <p>Looks even better in person.</p>
-
-
     
 
-    
+    <script src="script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

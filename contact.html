@@ -5,24 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
       <link rel="stylesheet" href="styles.css"> 
+      <!-- Bootstrap CSS --> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
 </head>
-<body><nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="collection.html">Collections</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="account.html">Account</a>
-    <a href="cart.html">Cart</a>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      Urban Vogue
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">
+            Shop
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="collection.html">
+            Collection
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="account.html">
+            Account
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">
+            Cart
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
 </nav>
    
  
-<section class=”banner”>
+<section class="banner">
     <h1>Contact Us</h1>
     <p><em>We are here to assist you with any enquiries</em></p>
 </section>
  
-<section class=”intro”>
+<section class="intro">
     <h2>Send us a message</h2>
     <p>
         Refined,timeless and crafted to elevate every look.For those who understand
@@ -33,36 +98,39 @@
     </p>
 </section>
  
-<section class=”contact-details”>
+<section class="contact-details">
     <h2>Contact Information</h2>
     <p><strong>Address:</strong> Plot 54349,Tlokweng, Gaborone, Botswana</p>
     <p><strong>Phone:</strong> +267 395 0000</p>
     <p><strong>Email:</strong> vogueurban@gmail.com</p>
 </section>
  
-<section class=”contact-form”>
+<section class="contact-form">
     <h2>Send Us a Message</h2>
  
-    <form onsubmit="return validateForm()"">
-        <label>Full Name:</label><br>
-        <input type=”text” id=”name”><br><br>
- 
-        <label>Email Address:</label><br>
-        <input type=”email” id=”email”><br><br>
- 
-        <label>Message:</label><br>
-        <textarea id=”message” rows=”5”></textarea><br><br>
- 
-        <button type=”submit”>Submit Message</button>
-    </form>
+    <form onsubmit="return validateForm()">
+
+    <label>Full Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea id="message" rows="5"></textarea><br><br>
+
+    <button type="submit">Submit Message</button>
+
+</form>
 </section>
  
 <footer>
     
 </footer>
  
-<script src=”script.js”></script>  
- 
+ <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
 </body>
