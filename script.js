@@ -34,9 +34,6 @@ function validateForm() {
     return true;
 }
 
-// Welcome message
-alert("Welcome to Urban Vogue!");
-
 
 // =======================
 // ADD TO CART BUTTONS
