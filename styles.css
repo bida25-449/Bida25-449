@@ -24,7 +24,7 @@ body{
 ========================= */
 
 nav{
-    background: #ff4f81;
+    background: #ff4ff9;
     padding: 18px 40px;
     display: flex;
     justify-content: center;
@@ -271,4 +271,29 @@ footer{
         width: 100%;
         max-width: 250px;
     }
+}
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.video-section{
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.video-section h2{
+    margin-bottom: 20px;
+    color: #b30059;
+}
+
+video{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
